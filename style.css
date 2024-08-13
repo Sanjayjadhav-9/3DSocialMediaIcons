@@ -87,12 +87,12 @@
     background: #c4302b;
 }
 
-.sci li a .fa{
+.sci li a .fa-brands{
     transition: 0.25s;
     pointer-events: none;
 }
 
-.sci li a:hover .fa{
+.sci li a:hover .fa-brands{
     color: #fff;
     transform: scale(1.50) translateZ(50px);
 }

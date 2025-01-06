@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    transform: 0.5s;
+}
+.sci {
+    position: relative;
+    display: flex;
+}
+.sci li { list-style: none; }
+.sci li::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 120px));
+    font-size: 4vw;
+    pointer-events: none;
+    font-weight: 700;
+    transition: 0.5s;
+    opacity: 0;
+}
+.sci li:hover::before {
+    opacity: 0.15;
+    transform: translate(-50%, calc(-50% + 170px));
+}
+.sci li a {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 4em;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    box-shadow: 0 25px 30px rgb(0, 0, 0, 0.3);
+    transition: background 0.25s;
+}
+.sci li a:hover.facebook { background: #1877f2; }
+.sci li a:hover.instagram {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+.sci li a:hover.linkedin { background: #0072b1; }
+.sci li a:hover.github { background: #333; }
+.sci li a:hover.twitter { background: #000000; }
+.sci li a:hover.youtube { background: #c4302b; }
+.sci li a:hover.gmail .logo,
+.sci li a:hover.careerpedia .logo,
+.sci li a:hover.leetcode .logo,
+.sci li a:hover.quickref .logo,
+.sci li a:hover.roadmap .logo,
+.sci li a:hover.v0 .logo,
+.sci li a:hover.w3 .logo,
+.sci li a:hover.postman .logo,
+.sci li a:hover.mockapi .logo
+{
+    width: 60px;
+    height: 60px;
+}
+.sci li a img {
+    width: 80px;
+    height: 80px;
+}
+.quickref img {
+    width: 120px;
+    height: 120px;
+    fill:rgb(0, 0, 0, 0.1)
+}
+.leetcode img{ border-radius: 10px; }
+.v0 img {
+    padding-top: 4px;
+    padding-right: 2px;
+}
+.sci li a .roadmap img {
+    width: 80px;
+    height: 80px;
+    fill:rgb(0, 0, 0, 0.1)
+}
+.sci li a .fa-brands {
+    transition: 0.25s;
+    pointer-events: none;
+}
+.sci li a:hover .fa-brands {
+    color: #fff;
+    transform: scale(1.50) translateZ(50px);
+}

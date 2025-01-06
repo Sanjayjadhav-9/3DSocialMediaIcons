@@ -54,7 +54,7 @@
 }
 .sci li a:hover.linkedin { background: #0072b1; }
 .sci li a:hover.github { background: #333; }
-.sci li a:hover.twitter { background: #000000; }
+.sci li a:hover.twitter, .sci li a:hover.w3, .sci li a:hover.v0, .sci li a:hover.postman{ background: #000000; }
 .sci li a:hover.youtube { background: #c4302b; }
 .sci li a:hover.gmail .logo,
 .sci li a:hover.careerpedia .logo,
@@ -79,10 +79,6 @@
     fill:rgb(0, 0, 0, 0.1)
 }
 .leetcode img{ border-radius: 10px; }
-.v0 img {
-    padding-top: 4px;
-    padding-right: 2px;
-}
 .sci li a .roadmap img {
     width: 80px;
     height: 80px;

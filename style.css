@@ -8,10 +8,7 @@
     min-height: 30vh;
     transform: 0.5s;
 }
-.sci {
-    position: relative;
-    display: flex;
-}
+.sci { position: relative; display: flex; }
 .sci li { list-style: none; }
 .sci li::before {
     content: attr(data-text);
@@ -28,6 +25,7 @@
 .sci li:hover::before {
     opacity: 0.15;
     transform: translate(-50%, calc(-50% + 170px));
+
 }
 .sci li a {
     position: relative;
@@ -49,22 +47,12 @@
     transition: background 0.25s;
 }
 .sci li a:hover.facebook { background: #1877f2; }
-.sci li a:hover.instagram {
-    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-}
+.sci li a:hover.instagram { background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); }
 .sci li a:hover.linkedin { background: #0072b1; }
 .sci li a:hover.github { background: #333; }
 .sci li a:hover.twitter, .sci li a:hover.w3, .sci li a:hover.v0, .sci li a:hover.postman{ background: #000000; }
 .sci li a:hover.youtube { background: #c4302b; }
-.sci li a:hover.gmail .logo,
-.sci li a:hover.careerpedia .logo,
-.sci li a:hover.leetcode .logo,
-.sci li a:hover.quickref .logo,
-.sci li a:hover.roadmap .logo,
-.sci li a:hover.v0 .logo,
-.sci li a:hover.w3 .logo,
-.sci li a:hover.postman .logo,
-.sci li a:hover.mockapi .logo
+.sci li a:hover.gmail .logo, .sci li a:hover.careerpedia .logo, .sci li a:hover.leetcode .logo, .sci li a:hover.quickref .logo, .sci li a:hover.roadmap .logo, .sci li a:hover.v0 .logo, .sci li a:hover.w3 .logo, .sci li a:hover.postman .logo, .sci li a:hover.mockapi .logo
 {
     width: 60px;
     height: 60px;
@@ -79,6 +67,7 @@
     fill:rgb(0, 0, 0, 0.1)
 }
 .leetcode img{ border-radius: 10px; }
+.w3 .logo, .mockapi .logo{ border-radius: 8px; }
 .sci li a .roadmap img {
     width: 80px;
     height: 80px;

@@ -25,7 +25,6 @@
 .sci li:hover::before {
     opacity: 0.15;
     transform: translate(-50%, calc(-50% + 170px));
-
 }
 .sci li a {
     position: relative;
